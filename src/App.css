@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+/* src/App.css */
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #007bff;
+  --card-background: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark-mode {
+  --background-color: #0c0c0c;
+  --text-color: #ffffff;
+  --link-color: #ffeb3b;
+  --card-background: #424040;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background: linear-gradient(90deg, rgb(212, 212, 247), rgb(0, 0, 136));
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar, .card-body, .movie-details {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand, .nav-link, h2, p {
+  color: var(--text-color) !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--link-color);
+}
+
+/* Example: Ensure body.dark-mode applies correct background color */
+body.dark-mode {
+  background: linear-gradient(90deg, rgb(0, 0, 0), rgb(0, 0, 136));
+  transition: background-color 0.3s, color 0.3s;
 }

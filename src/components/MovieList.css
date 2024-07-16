@@ -1,0 +1,79 @@
+/* src/components/MovieList.css */
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.btn {
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: var(--link-color);
+    color: #fff; /* Fallback color for text */
+}
+
+.btn:hover {
+    background-color: #007bff; /* Example: Light mode button hover color */
+    color: #fff;
+}
+
+/* Dark mode styles */
+body.dark-mode .card,
+body.dark-mode .card-body {
+    background-color: rgb(12, 11, 11);
+    color: var(--text-color-dark);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode .card-title {
+    color: rgb(255, 255, 255);
+}
+
+body.dark-mode .btn {
+    background-color: var(--link-color-dark);
+}
+
+body.dark-mode .btn:hover {
+    background-color: #0056b3; /* Example: Dark mode button hover color */
+}

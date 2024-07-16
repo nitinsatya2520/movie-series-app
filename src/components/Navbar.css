@@ -1,0 +1,77 @@
+/* src/components/Navbar.css */
+
+.navbar {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(45deg, rgb(255, 255, 255), rgb(0, 0, 136));
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: var(--link-color);
+}
+
+.navbar-nav .nav-link {
+    margin-right: 15px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--link-color);
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--text-color);
+    border-radius: 2px;
+}
+
+.dark-mode-toggle {
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    color: var(--link-color);
+}
+
+/* Dark mode styles */
+body.dark-mode .navbar {
+    box-shadow: 0 4px 8px rgba(211, 211, 211, 0.1);
+    background: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 136));
+}
+
+body.dark-mode .navbar-brand,
+body.dark-mode .navbar-nav .nav-link,
+body.dark-mode .navbar-toggler-icon {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .navbar-brand:hover,
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: var(--link-color-dark);
+}
+
+body.dark-mode .dark-mode-toggle {
+    color: var(--text-color-dark);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    color: var(--link-color-dark);
+}
