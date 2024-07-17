@@ -15,7 +15,7 @@ body.dark-mode {
 }
 
 body {
-  background: linear-gradient(90deg, rgb(212, 212, 247), rgb(0, 0, 136));
+  background: linear-gradient(90deg, rgb(212, 212, 247), rgb(2, 238, 255));
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
 }
