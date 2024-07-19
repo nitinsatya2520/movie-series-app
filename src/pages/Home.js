@@ -4,6 +4,9 @@ import { fetchTrendingMovies, searchMovies } from '../api';
 import MovieList from '../components/MovieList';
 import Search from '../components/Search';
 import './Home.css';
+import profileImage from '../1.png'; // Adjust the path if needed
+
+import lw from '../3.png';
 
 const Home = () => {
     const [movies, setMovies] = useState([]);
@@ -46,10 +49,18 @@ const Home = () => {
 
     return (
         <div className="container">
+            <img src={profileImage} alt="" className='pro' />
+           
+           <img src={lw} alt="" className='pro2' />
             <Search onSearch={handleSearch} />
             <h2 className="my-4">Trending Movies</h2>
             <MovieList movies={searchResults.length > 0 ? searchResults : movies} />
+            
+            
+        
+        
         </div>
+        
     );
 };
 

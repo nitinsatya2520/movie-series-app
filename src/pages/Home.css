@@ -28,5 +28,29 @@ h2::after {
     text-align: center;
     margin-top: 50px;
     font-size: 1.5rem;
-    color: #ff0000;
+    color: #000000;
 }
+.pro {
+    position: fixed;
+    top: 140px;
+    right: 10px;
+    
+    border: 1px solid #dddddd00;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    
+  }
+
+ 
+
+  .pro2 {
+    position: fixed;
+    bottom: 90px;
+    left: 10px;
+    border: 1px solid #dddddd00;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    transition: transform 0.3s ease-in-out;
+  }

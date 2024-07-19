@@ -6,6 +6,7 @@ import MovieDetails from './pages/MovieDetails';
 import SeriesDetails from './pages/SeriesDetails';
 import './App.css';
 
+
 const App = () => {
     const [darkMode, setDarkMode] = useState(false);
 
@@ -24,11 +25,13 @@ const App = () => {
     return (
         <Router>
             <Navbar toggleDarkMode={toggleDarkMode} isDarkMode={darkMode} />
+            
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/movie/:id" element={<MovieDetails />} />
                 <Route path="/series/:id" element={<SeriesDetails />} />
             </Routes>
+            
         </Router>
     );
 };

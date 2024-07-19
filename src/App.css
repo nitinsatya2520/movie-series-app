@@ -20,6 +20,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+
 .navbar, .card-body, .movie-details {
   background-color: var(--card-background);
   color: var(--text-color);
