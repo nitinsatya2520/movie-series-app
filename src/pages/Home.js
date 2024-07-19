@@ -45,7 +45,7 @@ const Home = () => {
     };
 
     if (loading) return <div className="loading">Loading...</div>;
-    if (error) return <div className="error">{error}</div>;
+    if (error) return <div className="loading">{error}</div>;
 
     return (
         <div className="container">
