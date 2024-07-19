@@ -24,11 +24,18 @@ h2::after {
     margin: 10px auto 0;
 }
 
-.loading, .error {
+.loading {
     text-align: center;
     margin-top: 50px;
     font-size: 1.5rem;
     color: #000000;
+}
+
+body.dark-mode .loading {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    color: #ffffff;
 }
 .pro {
     position: fixed;
